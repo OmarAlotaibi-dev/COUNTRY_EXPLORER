@@ -1,0 +1,118 @@
+/* GLOBAL  */
+body {
+  margin: 0;
+  background-color: #f3f3f3;       
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* HEADER */
+.header {
+  background-color: #333333;       
+  height: 102px;                   
+  display: flex;
+  align-items: center;
+  padding: 0 32px;                 
+  box-sizing: border-box;
+  color: #FFFFFF;
+  justify-content: center;
+}
+
+/* PAGE PANEL */
+.page {
+  max-width: none;
+  margin: 0 auto;
+  background-color: #FFFFFF;       
+  padding-top: 32px;               
+  box-sizing: border-box;
+}
+
+/* FILTER BAR */
+#filter {
+  background-color: #E0E0E0;      
+  padding: 20px;                   
+  display: flex;
+  gap: 38px;                       
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-bottom: 20px;             
+}
+
+#filter section label {
+  display: flex;
+  flex-direction: column;
+  gap: 4.32px;                    
+}
+
+/* Inputs & selects - 5px border round rule */
+#filter input,
+#filter select {
+  border-radius: 5px;
+  border: 1px solid #CCCCCC;
+  padding: 10px;
+  width: 200px;                    /* EXACT 200px width from wireframe */
+  box-sizing: border-box;
+}
+
+/* =================== ERROR MESSAGES =================== */
+.error,
+.errorregion,
+.errorNotValid {
+  font-size: 12px !important;      /* Brand rule: 12px */
+  color: red;
+  display: none;
+}
+
+/* =================== CARDS GRID =================== */
+#country-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;                       /* EXACT 20px vertical & horizontal */
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+/* =================== CARD STYLING =================== */
+#country-cards-container article {
+  background-color: #E0E0E0;
+  padding: 28.8px;                 /* EXACT 28.8 padding from wireframe */
+  border-radius: 5px;              /* Brand rounded rule */
+  box-sizing: border-box;
+  min-height: 232px;               /* Card height (200 + 32px = 232) EXACT */
+  cursor: pointer;
+}
+
+/* Flag image */
+#country-cards-container article img {
+  width: 200px;                    /* EXACT 200px width from wireframe */
+  height: 105px;                   /* EXACT 105px */
+  object-fit: cover;
+  margin-bottom: 12px;             /* EXACT red spacing under flag */
+}
+
+/* Text inside cards */
+#country-cards-container article h2 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#country-cards-container article p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* =================== SHOW MORE BUTTON =================== */
+#ShowMoreBtn {
+  margin-top: 10px;                /* EXACT 10px above button */
+  margin-left: 38.4px;             /* EXACT 38.4px from card alignment */
+  background-color: #333333;       /* Main element color */
+  color: #FFFFFF;
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  
+}

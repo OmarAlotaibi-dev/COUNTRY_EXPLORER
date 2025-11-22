@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Country Explorer </title>
+</head>
+    <body>
+<header class="header">
+    <img src ="./assets/world.png" alt = "world icon" class = "header-icon">
+    <h1 class ="header-title">Country Explorer</h1>
+</header>
+
+<main class="page">
+
+
+<form id="filter">
+<section >
+    <label >Search by Country Name: 
+        <input type="text" id="searchInput">
+    </label>
+        <span class="error">There is no country matching your search, try again with different keywords!</span>
+</section>
+<section>
+    <label>Select a Region
+    <select id="regionSelect">
+       <option>All regions</option>
+       <option>Africa</option>
+       <option>Americas</option>
+       <option>Asia</option>
+       <option>Europe</option>
+       <option>Oceania</option>
+      </select>
+    </label>
+      <span class="errorregion">Invalid region selected</span>
+</section>
+<section>
+    <label> Search by Population:
+       <input type="number" id="populationInput">
+    </label>
+        <span class="errorNotValid" >The number is not valid</span>
+</section>
+
+ </form>
+<div id="country-cards-container"></div>
+<button id ="ShowMoreBtn">Show More</button>
+</main>
+
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
